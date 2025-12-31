@@ -9,11 +9,13 @@
                 <%= listing.title %>
             </h3>
         </div>
-        <div class="card col-6 offset-3 show-card listing-card">
+        <div class="card col-6 offset-3 show-card showCardStyle">
             <img src="<%=listing.image.url%>" class="card-img-top show-img" alt="listing_image">
             <div class="card-body">
                 <p class="card-text">Owned By <i>
-                        <%=listing.owner.username%>
+                        <strong>
+                            <%=listing.owner.username%>
+                        </strong>
                     </i>
                 </p>
 
@@ -21,16 +23,16 @@
                     <%= listing.description %>
                 </p>
 
-                <p class="card-text">&#8377;<%= listing.price ? listing.price.toLocaleString("en-IN") : "N/A" %>
-                </p>
 
-                <p class="card-text">
-                    <%= listing.location %>
-                </p>
+                <h4 class="card-text price">&#8377;<%= listing.price ? listing.price.toLocaleString("en-IN") : "N/A" %>
+                        <span class="text-muted fs-6">/ night</span>
+                </h4>
 
-                <p class="card-text">
-                    <%= listing.country %>
+                <p class="listing-location">
+                    <i class="bi bi-geo-fill"></i>
+                    <strong><%= listing.location %></strong>, <%= listing.country %>
                 </p>
+                
             </div>
         </div>
 
@@ -38,10 +40,10 @@
 
         <% if(currUser && listing.owner._id.equals(currUser._id)) { %>
             <div class="btns">
-                <a href="/listings/<%=listing._id%>/edit" class="btn btn-dark offset-3 edit-btn">Edit</a>
+                <a href="/listings/<%=listing._id%>/edit" class="btn btn-dark offset-3 edit-btn mt-4">Edit</a>
 
                 <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-                    <button class="btn btn-dark offset-3">Delete</button>
+                    <button class="btn btn-dark offset-3 mt-4">Delete</button>
                 </form>
             </div>
             <% } %>

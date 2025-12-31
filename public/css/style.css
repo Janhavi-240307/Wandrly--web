@@ -70,11 +70,13 @@ body {
     width: 100% !important;
     object-fit: cover !important;
 }
-.listing-image{
+
+.listing-image {
     border-radius: 1.8rem;
     overflow: hidden;
 }
-.listing-card .listing-image{
+
+.listing-card .listing-image {
     border-radius: 1.8em;
 }
 
@@ -90,6 +92,12 @@ body {
     text-decoration: none;
 }
 
+.ListingCardStyle {
+    background-color: #fffdf9;
+    border: 1.5px solid black !important;
+    border-radius: 15px;
+    padding: 2.5rem;
+}
 
 /* CARD EFFECT */
 .card-img-overlay {
@@ -103,14 +111,8 @@ body {
 
 
 /* NEW PAGE */
-.Newlistingcard {
-    background-color: #fffdf9;
-    border: 1.5px solid black;
-    border-radius: 15px;
-    padding: 2.5rem;
-}
 
-.Newlistingcard h3 {
+.ListingCardStyle h3 {
     font-weight: 600;
     margin-bottom: 1.5rem;
     display: flex;
@@ -124,29 +126,24 @@ body {
 
 .add-btn {
     background-color: #fe424d !important;
-    border: none !important; 
+    border: none !important;
+}
+
+.add-btn:hover {
+    opacity: 0.8;
+}
+
+.action-btn {
+    min-width: 100px;
 }
 
 
-/* EDIT PAGE */
-.Editlistingcard {
-    background-color: #fffdf9;
-    border: 1.5px solid black;
-    border-radius: 15px;
-    padding: 2.5rem;
-}
-
-.Editlistingcard h3 {
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;
-}
+/* EDIT PAGE*/
 
 .edit-image {
     width: 100%;
-    max-width: 400px;
-    height: 250px;
+    max-width: 300px;
+    height: 150px;
     object-fit: cover;
     border-radius: 8px;
     margin-top: 1rem;
@@ -157,7 +154,8 @@ body {
     background-color: #fe424d !important;
     border: none !important;
 }
-.edit-btn:hover{
+
+.edit-btn:hover {
     opacity: 0.8;
 }
 
@@ -181,6 +179,28 @@ body {
 .show-card {
     padding-left: 0;
     padding-right: 0;
+}
+
+.showCardStyle {
+    background-color: #fffdf9;
+    border: 1.5px solid black !important;
+    border-radius: 15px;
+    padding: 2.5rem;
+}
+
+.price {
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.bi {
+    color: red;
+    font-size: 1.2rem;
+    margin-right: 0.4rem;
+}
+
+.listing-location {
+    margin-bottom: 0.25rem;
 }
 
 /* MAP */
