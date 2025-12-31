@@ -1,7 +1,7 @@
 <% layout("/layouts/boilerplate") %>
     <div class="row mt-3">
-        <div class="col-8 offset-2">
-            <h3>Create a New Listing</h3>
+        <div class="col-8 offset-2 Newlistingcard">
+            <h3>List your place</h3>
             <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
@@ -17,8 +17,7 @@
 
                 <div class="mb-3">
                     <label for="image" class="form-label">Upload Image</label>
-                    <input name="listing[image]" type="file" class="form-control" />
-                    required
+                    <input name="listing[image]" type="file" class="form-control" required />
                 </div>
 
                 <div class="row">
@@ -41,7 +40,7 @@
                 </div>
 
                 <button class="btn btn-dark add-btn mt-2">Add</button>
-                <br /><br />
+                <!-- <br /><br /> -->
             </form>
         </div>
     </div>
