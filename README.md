@@ -5,10 +5,10 @@ Wandrly – Full Stack Travel Listing Platform
 Wandrly is my first full-stack web application, built as part of my learning journey in web development.  
 It is a travel & stay listing platform where users can explore destinations, view listings, and interact with a dynamic, database-driven application.
 
- This project is actively evolving — I am currently improving responsiveness across devices and refining the UI for smaller screens.
+This project is actively evolving — I am currently improving responsiveness across devices and refining the UI for smaller screens.
 
-Live Demo
-🔗 https://wandrly.onrender.com  
+Live Demo:
+https://wandrly-web.onrender.com
 
 Features:
 - Browse travel & stay listings
@@ -38,6 +38,7 @@ Other Tools
 - Express-session
 - Method-override
 - Cloud deployment (Render)
+
 
  Project Structure:
  
