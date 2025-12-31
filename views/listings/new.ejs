@@ -5,7 +5,8 @@
             <form method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data">
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
-                    <input name="listing[title]" placeholder="Add a catchy title" type="text" class="form-control" required />
+                    <input name="listing[title]" placeholder="Add a catchy title" type="text" class="form-control"
+                        required />
                     <div class="valid-feedback">Title looks good!</div>
                 </div>
 
@@ -28,7 +29,8 @@
                     </div>
                     <div class="mb-3 col-md-8">
                         <label for="location" class="form-label">Location</label>
-                        <input name="listing[location]" placeholder="Vapi,Gujarat" type="text" class="form-control" required/>
+                        <input name="listing[location]" placeholder="Vapi,Gujarat" type="text" class="form-control"
+                            required />
                         <div class="invalid-feedback">Location should be valid!</div>
                     </div>
                 </div>
@@ -39,8 +41,12 @@
                     <div class="invalid-feedback">Country name should be valid!</div>
                 </div>
 
-                <button class="btn btn-dark add-btn mt-2">Add</button>
-                <!-- <br /><br /> -->
+                <div class="form-action">
+                    <button class="btn btn-dark add-btn mt-2">Add</button>
+                    <a href="/listings" class="btn btn-sm btn-dark">
+                        Cancel
+                    </a>
+                </div>
             </form>
         </div>
     </div>

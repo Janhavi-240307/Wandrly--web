@@ -98,7 +98,6 @@ body {
 /* NEW PAGE */
 .Newlistingcard {
     background-color: #fffdf9;
-    ;
     border: 1.5px solid black;
     border-radius: 15px;
     padding: 2.5rem;
@@ -119,26 +118,50 @@ body {
 .add-btn {
     background-color: #fe424d !important;
     border: none !important;
-    display: block !important;
-    margin: 0.5rem auto !important;
+    /* display: block !important;
+    margin: 0.5rem auto !important; */
 }
 
 
 /* EDIT PAGE */
-.edit-btn {
-    background-color: #fe424d !important;
-    border: none !important;
-    background-color: #fe424d !important;
-    border: none !important;
-    display: block !important;
-    margin: 0.5rem auto !important;
+.Editlistingcard {
+    background-color: #fffdf9;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    padding: 2.5rem;
 }
 
-.Editlistingcard {
+.Editlistingcard h3 {
     font-weight: 600;
     margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;
+}
+
+.edit-image {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.edit-btn:hover{
+    opacity: 0.8;
+}
+
+.form-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    border-radius: 1rem
 }
 
 /* SHOW PAGE */
