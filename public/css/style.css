@@ -70,6 +70,13 @@ body {
     width: 100% !important;
     object-fit: cover !important;
 }
+.listing-image{
+    border-radius: 1.8rem;
+    overflow: hidden;
+}
+.listing-card .listing-image{
+    border-radius: 1.8em;
+}
 
 .card-body {
     padding: 0 !important;
@@ -117,9 +124,7 @@ body {
 
 .add-btn {
     background-color: #fe424d !important;
-    border: none !important;
-    /* display: block !important;
-    margin: 0.5rem auto !important; */
+    border: none !important; 
 }
 
 
