@@ -2,15 +2,15 @@
     "engines":{
       "node":"22.18.0"
     },
-  "name": "majorproject",
+  "name": "wandrly",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full-stack travel and stay listing platform built with Node.js, Express, MongoDB and EJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["nodejs", "express", "mongodb", "ejs", "passport", "mapbox", "cloudinary"],
+  "author": "Janhavi Singh",
   "license": "ISC",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.16.2",
