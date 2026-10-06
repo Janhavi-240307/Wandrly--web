@@ -10,6 +10,9 @@ This project is actively evolving — I am currently improving responsiveness ac
 Live Demo:
 https://wandrly-web.onrender.com
 
+<img width="1917" height="1047" alt="image" src="https://github.com/user-attachments/assets/cdd90d0b-e865-402e-8e6f-4499319d894c" />
+
+
 Features:
 - Browse travel & stay listings
 - User authentication (Sign up / Log in / Log out)
